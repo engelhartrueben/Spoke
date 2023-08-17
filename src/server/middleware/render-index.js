@@ -1,5 +1,6 @@
 import { hasConfig, getConfig } from "../api/lib/config";
 import { getProcessEnvTz, getProcessEnvDstReferenceTimezone } from "../../lib";
+import { FaviconLogo } from "../../assets/logo.jsx"
 
 const canGoogleImport = hasConfig("GOOGLE_SECRET");
 
@@ -61,7 +62,7 @@ export default function renderIndex(html, css, assetMap) {
     </style>
     <style data-aphrodite>${css.content}</style>
     ${rollbarScript}
-    <link rel="icon" href="https://s3-us-west-1.amazonaws.com/spoke-public/spoke_logo.svg">
+    <link rel="icon" href="${FaviconLogo}">
   </head>
   <body>
     <div id="mount">${html}</div>
