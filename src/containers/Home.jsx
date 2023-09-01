@@ -7,6 +7,7 @@ import theme from "../styles/theme";
 import { withRouter } from "react-router";
 import Link from "@material-ui/core/Link";
 import { compose } from "recompose";
+import Logo from "../assets/logo.jsx"
 
 export const styles = StyleSheet.create({
   container: {
@@ -24,7 +25,7 @@ export const styles = StyleSheet.create({
     ...theme.components.logoDiv
   },
   logoImg: {
-    width: 120,
+    width: 170,
     ...theme.components.logoImg
   },
   header: {
@@ -113,7 +114,7 @@ class Home extends React.Component {
       <div className={css(styles.container)}>
         <div className={css(styles.logoDiv)}>
           <img
-            src="https://s3-us-west-1.amazonaws.com/spoke-public/spoke_logo.svg"
+            src={Logo}
             className={css(styles.logoImg)}
           />
         </div>

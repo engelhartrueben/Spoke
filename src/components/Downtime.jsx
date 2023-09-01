@@ -3,6 +3,7 @@ import React from "react";
 import theme from "../styles/theme";
 import { css } from "aphrodite";
 import { styles } from "../containers/Home";
+import Logo from "../assets/logo.jsx"
 
 class Downtime extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class Downtime extends React.Component {
       <div className={css(styles.container)}>
         <div className={css(styles.logoDiv)}>
           <img
-            src="https://s3-us-west-1.amazonaws.com/spoke-public/spoke_logo.svg?downtime"
+            src={Logo}
             className={css(styles.logoImg)}
           />
         </div>
